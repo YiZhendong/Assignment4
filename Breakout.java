@@ -58,6 +58,7 @@ public class Breakout extends GraphicsProgram {
 	private static final int NTURNS = 3;
 
 	public void run() {
-		/* You fill this in, along with any subsidiary methods */
+		createPaddle();
+		createBall();
 	}
 }
