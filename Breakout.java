@@ -99,8 +99,11 @@ public class Breakout extends GraphicsProgram {
 		return ball;
 	}
 	
+	private double vx,vy;
 	private void bounceBall(GOval ball){
-		private double vx,vy;
-		
+		RandomGenerator rgen = RandomGenerator.getInstance();
+		vx = rgen.nextDouble(1.0,3.0);
+		if(rgen.nextBoolean(0.5)) vx = -vx;
+		vy = 3.0
 	}
 }
