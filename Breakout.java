@@ -143,7 +143,7 @@ public class Breakout extends GraphicsProgram {
 				
 			}else{
 				remove(collider);
-				turn(ball);
+				vy = -vy;
 			}
 			pause(PAUSE_TIME);
 		}
