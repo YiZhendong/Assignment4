@@ -65,7 +65,10 @@ public class Breakout extends GraphicsProgram {
 		brickCollision();
 	}
 
+	private static int paddleX = (WIDTH - PADDLE_WIDTH)/2;
+	private static int paddleY = (HEIGHT - PADDLE_HEIGHT-PADDLE_Y_OFFSET);
 	private void createPaddle() {
 		
+		GRect paddle = new GRect()
 	}
 }
