@@ -1,8 +1,9 @@
 /*
  * File: Breakout.java
  * -------------------
- * Name:
- * Section Leader:
+ * Name:ZhendongYi
+ * Email:myyizhendong@gmail.com
+ * Time:2016/07/02
  * 
  * This file will eventually implement the game of Breakout.
  */
