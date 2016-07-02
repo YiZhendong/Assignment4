@@ -132,7 +132,7 @@ public class Breakout extends GraphicsProgram {
 
 	private GObject getCollidingObject() {
 		// TODO Auto-generated method stub
-		
+		GObject collider = getElementAt(ball.getX(),ball.getY());
 		return null;
 	}
 
