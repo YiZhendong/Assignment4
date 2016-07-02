@@ -133,7 +133,7 @@ public class Breakout extends GraphicsProgram {
 
 	private boolean ballAboveFloor(GOval ball) {
 		// TODO Auto-generated method stub
-		return false;
+		return ball.getY()<=0;
 	}
 
 	private boolean ballLeftWall(GOval ball) {
