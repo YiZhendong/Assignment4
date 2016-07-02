@@ -126,7 +126,7 @@ public class Breakout extends GraphicsProgram {
 			
 			GObject collider = getCollidingObject(ball);
 			if(collider == paddle){
-				
+				vy = -vy;
 			}
 			pause(PAUSE_TIME);
 		}
