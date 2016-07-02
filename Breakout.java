@@ -100,6 +100,8 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	private GRect brick ;
+	
+	/** create a row of bricks */
 	private void createRowBricks(Color color,int row) {
 		// TODO Auto-generated method stub
 		for(int i = 0;i<NBRICKS_PER_ROW;i++){
