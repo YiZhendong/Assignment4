@@ -69,6 +69,6 @@ public class Breakout extends GraphicsProgram {
 	private static int paddleY = (HEIGHT - PADDLE_HEIGHT-PADDLE_Y_OFFSET);
 	private void createPaddle() {
 		
-		GRect paddle = new GRect()
+		GRect paddle = new GRect(paddleX,paddleY,PADDLE_WIDTH,PADDLE_HEIGHT);
 	}
 }
