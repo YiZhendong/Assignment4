@@ -84,7 +84,9 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	private void createBallAndBounce(){
-		createBall();
+		GOval ball = createBall();
+		add(ball);
+		bounceBall(ball);
 	}
 
 	private static int ballX = (WIDTH - BALL_RADIUS*2)/2;
