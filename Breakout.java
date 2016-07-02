@@ -94,7 +94,7 @@ public class Breakout extends GraphicsProgram {
 	
 	private GOval createBall() {
 		// TODO Auto-generated method stub
-		GOval ball = new GOval(ballX,ballY,BALL_RADIUS,BALL_RADIUS);
+		GOval ball = new GOval(ballX,ballY,BALL_RADIUS*2,BALL_RADIUS*2);
 		ball.setFilled(true);
 		return ball;
 	}
