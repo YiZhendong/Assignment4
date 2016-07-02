@@ -123,6 +123,8 @@ public class Breakout extends GraphicsProgram {
 			if(ballRightWall(ball)){
 				vx = -vx;
 			}
+			
+			pause(PAUSE_TIME)
 		}
 	}
 
