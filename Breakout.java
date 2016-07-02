@@ -138,7 +138,7 @@ public class Breakout extends GraphicsProgram {
 
 	private boolean ballLeftWall(GOval ball) {
 		// TODO Auto-generated method stub
-		return false;
+		return ball.getX()<=0;
 	}
 
 	private boolean ballRightWall(GOval ball) {
