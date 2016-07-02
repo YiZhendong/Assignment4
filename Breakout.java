@@ -92,6 +92,7 @@ public class Breakout extends GraphicsProgram {
 		paddle.setLocation(paddleX,paddleY);
 	}
 	
+	/** create several rows bricks */
 	public void createBricks(){
 		for(int i = 0;i<NBRICK_ROWS;i++){
 			createRowBricks(colors[i],i);
