@@ -128,7 +128,7 @@ public class Breakout extends GraphicsProgram {
 
 	private boolean ballBelowFloor(GOval ball) {
 		// TODO Auto-generated method stub
-		return ball.getY()+BALL_RAIDUS*2>=HEIGHT;
+		return ball.getY()+BALL_RADIUS*2>=HEIGHT;
 	}
 
 	private boolean ballAboveFloor(GOval ball) {
