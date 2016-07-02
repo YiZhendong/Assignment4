@@ -78,6 +78,7 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	public void mouseMoved(MouseEvent e){
-		double y = e.getX();
+		paddleY = e.getX();
+		paddle.setLocation(paddleX,paddleY);
 	}
 }
