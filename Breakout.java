@@ -87,7 +87,7 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	public void createBricks(){
-		for(int i = 0;i<NBRICKS_ROW;i++){
+		for(int i = 0;i<NBRICK_ROWS;i++){
 			createRowBricks(colors[i]);
 		}
 	}
