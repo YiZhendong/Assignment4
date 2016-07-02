@@ -211,7 +211,7 @@ public class Breakout extends GraphicsProgram {
 		return (ball.getY()+BALL_RADIUS*2)>=HEIGHT;
 	}
 
-	private boolean ballAboveFloor(GOval ball) {
+	private boolean ballAboveCeiling(GOval ball) {
 		return ball.getY()<=0;
 	}
 
