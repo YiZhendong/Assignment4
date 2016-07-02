@@ -139,6 +139,11 @@ public class Breakout extends GraphicsProgram {
 	/** the velocity of the ball*/
 	private double vx,vy;
 	
+	/**number of removed bricks,when it becomes number of bricks,the game is over */
+	int numOfRemovedBricks=0;
+			
+	/** number of floorCollision,when it becomes 3,the game is over,too.*/
+	int floorCollision=0; 
 	private void bounceBall(GOval ball){
 		
 		//choose the vx component randomly
@@ -148,11 +153,7 @@ public class Breakout extends GraphicsProgram {
 		vy = 3.0;
 		
 		while(true){
-			//number of removed bricks,when it becomes number of bricks,the game is over
-			int numOfRemovedBricks=0;
 			
-			//number of floorCollision,when it becomes 3,the game is over,too.
-			int floorCollision=0;
 			ball.move(vx, vy);
 			turn(ball,floorCollision);
 			
