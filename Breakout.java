@@ -85,6 +85,7 @@ public class Breakout extends GraphicsProgram {
 		addMouseListeners();
 	}
 	
+	/** when mouse moves the paddle moves horizontally , too*/
 	public void mouseMoved(MouseEvent e){
 		paddleX = e.getX();
 		if(paddleX > WIDTH - PADDLE_WIDTH) paddleX = WIDTH - PADDLE_WIDTH;
