@@ -56,6 +56,8 @@ public class Breakout extends GraphicsProgram {
 
 	/** Number of turns */
 	private static final int NTURNS = 3;
+	
+	private static final Color colors={red,orange,yellow,green,blue};
 
 	public void run() {
 		createPaddle();
@@ -81,6 +83,10 @@ public class Breakout extends GraphicsProgram {
 		paddleX = e.getX();
 		if(paddleX > WIDTH - PADDLE_WIDTH) paddleX = WIDTH - PADDLE_WIDTH;
 		paddle.setLocation(paddleX,paddleY);
+	}
+	
+	public void createBricks(){
+		
 	}
 	
 	private void createBallAndBounce(){
