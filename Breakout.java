@@ -87,9 +87,18 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	public void createBricks(){
-		
+		for(int i = 0;i<NBRICKS_ROW;i++){
+			createRowBricks(colors[i]);
+		}
 	}
 	
+	private void createRowBricks(Color color) {
+		// TODO Auto-generated method stub
+		for(int i = 0;i<NBRICKS_PER_ROW;i++){
+			
+		}
+	}
+
 	private void createBallAndBounce(){
 		GOval ball = createBall();
 		add(ball);
