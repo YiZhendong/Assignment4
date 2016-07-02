@@ -75,4 +75,8 @@ public class Breakout extends GraphicsProgram {
 		
 		addMouseListeners();
 	}
+	
+	public void mouseMoved(MouseEvent e){
+		
+	}
 }
