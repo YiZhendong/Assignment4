@@ -74,6 +74,8 @@ public class Breakout extends GraphicsProgram {
 	/** coordinates of the paddle */
 	private static int paddleX = (WIDTH - PADDLE_WIDTH)/2;
 	private static int paddleY = (HEIGHT - PADDLE_HEIGHT-PADDLE_Y_OFFSET);
+	
+	/** create a paddle */
 	private void createPaddle() {
 		
 		paddle = new GRect(paddleX,paddleY,PADDLE_WIDTH,PADDLE_HEIGHT);
