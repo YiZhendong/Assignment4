@@ -95,7 +95,7 @@ public class Breakout extends GraphicsProgram {
 	private void createRowBricks(Color color) {
 		// TODO Auto-generated method stub
 		for(int i = 0;i<NBRICKS_PER_ROW;i++){
-			x = BRICK_SEP*i +i * BRICK_WIDTH;
+			int x = BRICK_SEP*i+1 +i * BRICK_WIDTH;
 		}
 	}
 
