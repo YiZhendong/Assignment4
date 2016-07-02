@@ -184,7 +184,6 @@ public class Breakout extends GraphicsProgram {
 
 	/** when the ball collides the wall ,the ball turns */
 	private void turn(GOval ball,int floorCollision) {
-		// TODO Auto-generated method stub
 		if(ballBelowFloor(ball)){
 			vy = -vy;
 			floorCollision++;
