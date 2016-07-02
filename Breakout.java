@@ -133,6 +133,7 @@ public class Breakout extends GraphicsProgram {
 		return ball;
 	}
 	
+	/** the pause time */
 	private static final double PAUSE_TIME = 1000.0 / 48;
 
 	private double vx,vy;
