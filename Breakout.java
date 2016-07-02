@@ -112,16 +112,16 @@ public class Breakout extends GraphicsProgram {
 		while(true){
 			ball.move(vx, vy);
 			if(ballBelowFloor(ball)){
-				
+				vy = -vy;
 			}
 			if(ballAboveFloor(ball)){
-				
+				vy = -vy;
 			}
 			if(ballLeftWall(ball)){
-				
+				vx = -vx;
 			}
 			if(ballRightWall(ball)){
-				
+				vx = -vx;
 			}
 		}
 	}
