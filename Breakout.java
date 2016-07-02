@@ -156,7 +156,7 @@ public class Breakout extends GraphicsProgram {
 		while(true){
 			
 			ball.move(vx, vy);
-			turn(ball,floorCollision);
+			turn(ball);
 			
 			//get the collider
 			GObject collider = getCollidingObject(ball);
