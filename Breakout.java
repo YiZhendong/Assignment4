@@ -98,4 +98,8 @@ public class Breakout extends GraphicsProgram {
 		ball.setFilled(true);
 		return ball;
 	}
+	
+	private void bounceBall(GOval ball){
+		
+	}
 }
