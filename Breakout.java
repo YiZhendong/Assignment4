@@ -145,6 +145,6 @@ public class Breakout extends GraphicsProgram {
 
 	private boolean ballRightWall(GOval ball) {
 		// TODO Auto-generated method stub
-		return ball.getX()+BALL_RADIUS*2>=WIDTH;
+		return ball.getX()+BALL_RADIUS>=WIDTH;
 	}
 }
