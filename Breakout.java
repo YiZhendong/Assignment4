@@ -104,6 +104,8 @@ public class Breakout extends GraphicsProgram {
 	/** create a row of bricks */
 	private void createRowBricks(Color color,int row) {
 		for(int i = 0;i<NBRICKS_PER_ROW;i++){
+			
+			//coordinates of the bricks
 			int x = BRICK_SEP*(i+1) +i * BRICK_WIDTH;
 			int y = BRICK_Y_OFFSET + row*BRICK_HEIGHT + BRICK_SEP*row;
 			brick = new GRect(x,y,BRICK_WIDTH,BRICK_HEIGHT);
