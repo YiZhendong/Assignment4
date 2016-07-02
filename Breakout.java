@@ -100,6 +100,7 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	private void bounceBall(GOval ball){
+		private double vx,vy;
 		
 	}
 }
