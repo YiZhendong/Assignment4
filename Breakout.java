@@ -116,7 +116,7 @@ public class Breakout extends GraphicsProgram {
 		}
 	}
 
-	/** create a ball in the central window and bounce the ball*/
+	/** create a ball in the central window and bounce the ball */
 	private void createBallAndBounce(){
 		GOval ball = createBall();
 		add(ball);
