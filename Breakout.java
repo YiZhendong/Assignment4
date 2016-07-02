@@ -168,6 +168,10 @@ public class Breakout extends GraphicsProgram {
 				vy = -vy;
 			}
 			pause(PAUSE_TIME);
+			
+			if(gameIsOver(floorCollision,numOfRemovedBricks)){
+				break;
+			}
 		}
 	}
 
