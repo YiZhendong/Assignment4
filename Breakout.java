@@ -154,7 +154,7 @@ public class Breakout extends GraphicsProgram {
 			//number of floorCollision,when it becomes 3,the game is over,too.
 			int floorCollision=0;
 			ball.move(vx, vy);
-			turn(ball);
+			turn(ball,i);
 			
 			//get the collider
 			GObject collider = getCollidingObject(ball);
