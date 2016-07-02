@@ -136,19 +136,6 @@ public class Breakout extends GraphicsProgram {
 		while(true){
 			ball.move(vx, vy);
 			turn(ball);
-			if(ballBelowFloor(ball)){
-				vy = -vy;
-			}
-			if(ballAboveFloor(ball)){
-				vy = -vy;
-			}
-			if(ballLeftWall(ball)){
-				vx = -vx;
-			}
-			if(ballRightWall(ball)){
-				vx = -vx;
-			}
-			
 			GObject collider = getCollidingObject(ball);
 			if(collider == paddle){
 				vy = -vy;
@@ -156,8 +143,25 @@ public class Breakout extends GraphicsProgram {
 				
 			}else{
 				remove(collider);
+				turn(ball);
 			}
 			pause(PAUSE_TIME);
+		}
+	}
+
+	private void turn(GOval ball) {
+		// TODO Auto-generated method stub
+		if(ballBelowFloor(ball)){
+			vy = -vy;
+		}
+		if(ballAboveFloor(ball)){
+			vy = -vy;
+		}
+		if(ballLeftWall(ball)){
+			vx = -vx;
+		}
+		if(ballRightWall(ball)){
+			vx = -vx;
 		}
 	}
 
