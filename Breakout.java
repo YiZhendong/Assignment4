@@ -124,8 +124,15 @@ public class Breakout extends GraphicsProgram {
 				vx = -vx;
 			}
 			
+			GObject collider = getCollidingObject();
+			if(collider == paddle){};
 			pause(PAUSE_TIME);
 		}
+	}
+
+	private GObject getCollidingObject() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	private boolean ballBelowFloor(GOval ball) {
