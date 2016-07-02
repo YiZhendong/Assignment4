@@ -90,7 +90,7 @@ public class Breakout extends GraphicsProgram {
 	private static int ballX = (WIDTH - BALL_RADIUS*2)/2;
 	private static int ballY = (WIDTH - BALL_RADIUS*2)/2;
 	
-	private void createBall() {
+	private GOval createBall() {
 		// TODO Auto-generated method stub
 		GOval ball = new GOval(ballX,ballY,BALL_RADIUS,BALL_RADIUS);
 		ball.setFilled(true);
