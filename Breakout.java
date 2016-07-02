@@ -182,6 +182,7 @@ public class Breakout extends GraphicsProgram {
 		}
 	}
 
+	/** get the collider ,maybe null or brick or paddle */
 	private GObject getCollidingObject(GOval ball) {
 		// TODO Auto-generated method stub
 		GObject collider = getElementAt(ball.getX(),ball.getY());
