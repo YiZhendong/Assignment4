@@ -140,6 +140,8 @@ public class Breakout extends GraphicsProgram {
 	private double vx,vy;
 	
 	private void bounceBall(GOval ball){
+		
+		//choose the vx component randomly
 		RandomGenerator rgen = RandomGenerator.getInstance();
 		vx = rgen.nextDouble(1.0,3.0);
 		if(rgen.nextBoolean(0.5)) vx = -vx;
@@ -148,6 +150,8 @@ public class Breakout extends GraphicsProgram {
 		while(true){
 			ball.move(vx, vy);
 			turn(ball);
+			
+			//get the collider
 			GObject collider = getCollidingObject(ball);
 			if(collider == paddle){
 				vy = -vy;
