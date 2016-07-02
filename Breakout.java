@@ -111,6 +111,38 @@ public class Breakout extends GraphicsProgram {
 		
 		while(true){
 			ball.move(vx, vy);
+			if(ballBelowFloor(ball)){
+				
+			}
+			if(ballAboveFloor(ball)){
+				
+			}
+			if(ballLeftWall(ball)){
+				
+			}
+			if(ballRightWall(ball)){
+				
+			}
 		}
+	}
+
+	private boolean ballBelowFloor(GOval ball) {
+		// TODO Auto-generated method stub
+		return ball.getY()+BALL_HEIGHT>=HEIGHT;
+	}
+
+	private boolean ballAboveFloor(GOval ball) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	private boolean ballLeftWall(GOval ball) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	private boolean ballRightWall(GOval ball) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }
