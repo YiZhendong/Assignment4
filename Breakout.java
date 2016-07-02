@@ -60,5 +60,12 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		createPaddle();
 		createBallAndBounce();
+		paddleCollision();
+		creadteBricks();
+		brickCollision();
+	}
+
+	private void createPaddle() {
+		
 	}
 }
