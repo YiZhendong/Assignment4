@@ -82,4 +82,16 @@ public class Breakout extends GraphicsProgram {
 		if(paddleX > WIDTH - PADDLE_WIDTH) paddleX = WIDTH - PADDLE_WIDTH;
 		paddle.setLocation(paddleX,paddleY);
 	}
+	
+	private void createBallAndBounce(){
+		createBall();
+	}
+
+	private static int ballX = (WIDTH - BALL_RADIUS*2)/2;
+	private static int ballY = (WIDTH - BALL_RADIUS*2)/2;
+	
+	private void createBall() {
+		// TODO Auto-generated method stub
+		GOval ball = new GOval(ballX,ballY,BALL_RADIUS,BALL_RADIUS);
+	}
 }
