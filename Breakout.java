@@ -148,7 +148,10 @@ public class Breakout extends GraphicsProgram {
 		vy = 3.0;
 		
 		while(true){
+			//number of removed bricks,when it becomes number of bricks,the game is over
 			int numOfRemovedBricks=0;
+			
+			int floorCollision=0;
 			ball.move(vx, vy);
 			turn(ball);
 			
@@ -160,6 +163,7 @@ public class Breakout extends GraphicsProgram {
 				
 			}else{
 				remove(collider);
+				numOfRemovedBricks++;
 				vy = -vy;
 			}
 			pause(PAUSE_TIME);
@@ -172,7 +176,7 @@ public class Breakout extends GraphicsProgram {
 		if(ballBelowFloor(ball)){
 			vy = -vy;
 		}
-		if(ballAboveFloor(ball)){
+		if(ballAboveCeiling(ball)){
 			vy = -vy;
 		}
 		if(ballLeftWall(ball)){
