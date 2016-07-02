@@ -123,6 +123,7 @@ public class Breakout extends GraphicsProgram {
 		bounceBall(ball);
 	}
 
+	/** coordinates of the ball */
 	private static int ballX = (WIDTH - BALL_RADIUS*2)/2;
 	private static int ballY = (WIDTH - BALL_RADIUS*2)/2;
 	
