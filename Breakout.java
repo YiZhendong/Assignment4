@@ -128,7 +128,6 @@ public class Breakout extends GraphicsProgram {
 	private static int ballY = (WIDTH - BALL_RADIUS*2)/2;
 	
 	private GOval createBall() {
-		// TODO Auto-generated method stub
 		GOval ball = new GOval(ballX,ballY,BALL_RADIUS*2,BALL_RADIUS*2);
 		ball.setFilled(true);
 		return ball;
