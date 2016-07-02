@@ -59,10 +59,10 @@ public class Breakout extends GraphicsProgram {
 
 	public void run() {
 		createPaddle();
-		createBallAndBounce();
+		/*createBallAndBounce();
 		paddleCollision();
 		creadteBricks();
-		brickCollision();
+		brickCollision();*/
 	}
 
 	private static int paddleX = (WIDTH - PADDLE_WIDTH)/2;
