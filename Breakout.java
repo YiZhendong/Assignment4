@@ -58,7 +58,8 @@ public class Breakout extends GraphicsProgram {
 	private static final int NTURNS = 3;
 	
 	/** Color of bricks */
-	private static final Color[] colors={Color.red,Color.orange,Color.yellow,Color.green,Color.blue};
+	private static final Color[] colors={Color.red,Color.red,Color.orange,Color.orange,
+			Color.yellow,Color.yellow,Color.green,Color.green,Color.blue,Color.blue};
 
 	public void run() {
 		createPaddle();
