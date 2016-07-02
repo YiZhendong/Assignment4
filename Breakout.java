@@ -88,7 +88,7 @@ public class Breakout extends GraphicsProgram {
 	
 	public void createBricks(){
 		for(int i = 0;i<NBRICK_ROWS;i++){
-			createRowBricks(colors[i]);
+			createRowBricks(colors[i],i);
 		}
 	}
 	
@@ -96,6 +96,7 @@ public class Breakout extends GraphicsProgram {
 		// TODO Auto-generated method stub
 		for(int i = 0;i<NBRICKS_PER_ROW;i++){
 			int x = BRICK_SEP*(i+1) +i * BRICK_WIDTH;
+			int y = BRICK_Y_OFFSET + ;
 		}
 	}
 
