@@ -176,6 +176,7 @@ public class Breakout extends GraphicsProgram {
 		// TODO Auto-generated method stub
 		if(ballBelowFloor(ball)){
 			vy = -vy;
+			floorCollision++;
 		}
 		if(ballAboveCeiling(ball)){
 			vy = -vy;
