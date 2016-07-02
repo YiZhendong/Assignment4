@@ -203,22 +203,18 @@ public class Breakout extends GraphicsProgram {
 	}
 
 	private boolean ballBelowFloor(GOval ball) {
-		// TODO Auto-generated method stub
 		return (ball.getY()+BALL_RADIUS*2)>=HEIGHT;
 	}
 
 	private boolean ballAboveFloor(GOval ball) {
-		// TODO Auto-generated method stub
 		return ball.getY()<=0;
 	}
 
 	private boolean ballLeftWall(GOval ball) {
-		// TODO Auto-generated method stub
 		return ball.getX()<=0;
 	}
 
 	private boolean ballRightWall(GOval ball) {
-		// TODO Auto-generated method stub
 		return ball.getX()+BALL_RADIUS*2>=WIDTH;
 	}
 }
