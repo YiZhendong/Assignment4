@@ -124,7 +124,7 @@ public class Breakout extends GraphicsProgram {
 				vx = -vx;
 			}
 			
-			pause(PAUSE_TIME)
+			pause(PAUSE_TIME);
 		}
 	}
 
