@@ -148,6 +148,7 @@ public class Breakout extends GraphicsProgram {
 		vy = 3.0;
 		
 		while(true){
+			int numOfRemovedBricks=0;
 			ball.move(vx, vy);
 			turn(ball);
 			
