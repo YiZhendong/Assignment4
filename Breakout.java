@@ -140,10 +140,10 @@ public class Breakout extends GraphicsProgram {
 	private double vx,vy;
 	
 	/**number of removed bricks,when it becomes number of bricks,the game is over */
-	int numOfRemovedBricks=0;
+	private static int numOfRemovedBricks=0;
 			
 	/** number of floorCollision,when it becomes 3,the game is over,too.*/
-	int floorCollision=0; 
+	private static int floorCollision=0; 
 	
 	private void bounceBall(GOval ball){
 		
