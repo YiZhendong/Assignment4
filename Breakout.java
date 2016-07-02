@@ -99,7 +99,7 @@ public class Breakout extends GraphicsProgram {
 			int x = BRICK_SEP*(i+1) +i * BRICK_WIDTH;
 			int y = BRICK_Y_OFFSET + row*BRICK_HEIGHT + BRICK_SEP*row;
 			GRect brick = new GRect(x,y,BRICK_WIDTH,BRICK_HEIGHT);
-			brick.setColor(null);
+			brick.setColor(getBackground());;
 			brick.setFilled(true);
 			brick.setFillColor(color);
 			add(brick);
