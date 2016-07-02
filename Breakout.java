@@ -177,7 +177,7 @@ public class Breakout extends GraphicsProgram {
 
 	private boolean gameIsOver(int floorCollision, int numOfRemovedBricks) {
 		if(floorCollision==3 || numOfRemovedBricks == NBRICKS_PER_ROW*NBRICK_ROWS) return true; 
-		else return fslse;
+		else return false;
 	}
 
 	/** when the ball collides the wall ,the ball turns */
