@@ -144,6 +144,7 @@ public class Breakout extends GraphicsProgram {
 			
 	/** number of floorCollision,when it becomes 3,the game is over,too.*/
 	int floorCollision=0; 
+	
 	private void bounceBall(GOval ball){
 		
 		//choose the vx component randomly
